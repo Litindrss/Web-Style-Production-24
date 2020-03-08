@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300|Roboto:300&display=swap&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100&display=swap&subset=greek-ext');
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap&subset=cyrillic-ext');
+
+h1{
+	font-weight:100; 
+}
+body{
+	width:100%;
+	 overflow-x:hidden;
+}
+.container{
+	margin: auto;
+}
+.navbar_item{
+	margin-top:21px;
+	margin-bottom: 30px;
+	border-top: 1px transparent solid;
+}
+	.navbar_item a{
+		font-family: 'Roboto', sans-serif;
+		text-decoration: none;
+		color: #4C4C4C;
+		padding-top: 11px;
+		display: block;
+		padding-right: .5rem;
+		padding-left: .5rem;
+	}
+	.navbar_item:hover{
+		border-color: #F4CE77;
+	}
+.main_header{
+	margin-bottom:57px;
+}
+	.main_header img{
+		margin-bottom:30px;
+		height: 43px;
+		width: 299px;
+	}
+	.main_header .help_btns{
+		align-items: center;
+		flex: 1;
+	}
+		.main_header .sub_btn{
+			text-transform: uppercase;
+			align-self: center;
+			border-top: 1px #EFEFEF solid;
+			margin-right: 30px;
+			text-align: center;
+			margin-bottom:20px;
+		}
+			.main_header .sub_btn:hover{
+				border-color: #F4CE77;
+			}
+			.main_header .sub_btn a{
+				display: block;
+				padding: 8px 30px 0px 30px;
+				font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+				color: #4C4C4C;
+			}
+		.main_header .red_button{
+			background-color: #E20613;
+			border-radius: 7px 20px 7px 7px;
+			text-transform: uppercase;
+			align-self: center;
+			text-align: center;
+			transition: box-shadow 0.2s;
+		}
+			.main_header .red_button:hover{
+				box-shadow: 0 0 10px #E20613; 
+			}
+			.main_header .red_button a{
+				display: block;
+				padding: 3px 40px 5px 40px;
+				text-decoration: none;
+				color: white;
+				position: relative;
+			}
+			.main_header .red_button a::after{
+				content:'';
+				height: 35px;
+				width: 35px;
+				position: absolute;
+				background-size: contain;
+				background-image: url(../images/heart.png);
+				right: -13px;
+				top:-2px;
+			}
+.top_content{
+
+}
+	.top_content h1{
+		font-family: Cormorant Garamond;
+		margin-top: 0px;
+		font-weight:600; 
+	}
+	.top_content h1 #f_bracket{
+		display: block;
+		transform: translateX(-10px);
+		position: relative;
+		top: 3rem;
+		right: 1rem;
+		color: #F4CE77;
+	}
+	.top_content h1 #s_bracket{
+		display: block;
+		transform: translateX(-10px);
+		position: relative;
+		bottom: 3rem;
+		left: 20rem;
+		color: #F4CE77;
+	}
+#name_tag{
+	display: block;
+	text-align: right;
+	position: relative;
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 21px;
+}
+	#name_tag::after{
+		content: '';
+		position: absolute;
+		width:70px;
+		height:1px;
+		right: 0px;
+		bottom:35px;
+		background-color:#F4CE77;
+	}
+#main_text{
+	font-family: 'Roboto', sans-serif;
+	margin-bottom: 60px;
+}
+.hr{
+	width:70px;
+	height:1px;
+	margin-top: 50px;
+	background-color:#F4CE77;
+}
+.saint{
+	position: relative;
+	margin-top: 60px;
+}
+	#saint_fir{
+		position: absolute;
+		top: 300px;
+		left: 50px;
+	}
+	#saint_thr{
+		position: absolute;
+		top: 400px;
+		right: 40px;
+	}
+.need_help{
+	margin-top: 100px;
+}
+.items_row{
+	justify-content: space-between;
+}
+	.need_help #h_le{
+		font-family: Roboto;
+		text-transform: uppercase;
+	}
+	.need_help #h_al{
+		font-family: Roboto;
+		text-align: left;
+		text-transform: uppercase;
+	}
+	.need_help_item{
+		position: relative;
+		width:260px;
+		border:1px transparent solid;
+		border-radius: 3px;
+		padding:0 20px 20px 20px;
+		transition: border-color 0.2s;
+		cursor: default;
+	}
+	.need_help_item:hover{
+		border-color: #979797;
+	}
+		.need_help_item h4{
+			font-family: Cormorant Garamond;
+			margin-bottom:20px;
+			font-weight:normal;
+		}
+		#disease{
+			font-family: 'Roboto', sans-serif;
+			margin-bottom:20px;
+		}
+		.more_info{
+			font-size: 14px;
+			font-family: 'Roboto', sans-serif;
+			margin-bottom:20px;
+			width:70px;
+			border-bottom: 1px #F4CE77 solid;
+			display: block;
+			position: absolute;
+			right: 0;
+		}
+			.need_help_item	.more_info{
+				margin-top:5px;
+				margin-right: 20px;
+			}
+			.more_info a{
+				text-decoration:none;
+				color: black;
+			}
+		.child_photo{
+			margin-top:40px;
+		}
+		.donations{
+			margin-top:10px;
+			position: relative;
+			display: flex;
+		}
+			.donations .count_alr{
+				font-size: 14px;
+			}
+				.donations .count_alr span{
+					font-size: 18px;
+					color: #F4CE77;
+				}
+			.donations .count_left{
+				font-size: 14px;
+				position: absolute;
+				right: 0px;
+				text-align:right;
+			}
+				.donations .count_left span{
+					font-size: 18px;
+					color: #E20613;
+				}
+		.progres_bar{
+			border: 1px #DADADA solid;
+			border-radius: 2px;
+			padding: 2px;
+			margin-top:10px;
+			height:12px;
+			position: relative;
+		}
+			.progres_bar::before{
+				content: '';
+				width:39%;
+				height:6px;
+				background-color: #F4CE77;
+				position: absolute;
+				border-radius: 2px 0px 0px 2px;
+				left: 2px;
+			}
+			.progres_bar::after{
+				content: '';
+				width:59%;
+				height:6px;
+				background-color: #E20613;
+				position: absolute;
+				border-radius: 0px 2px 2px 0px;
+				right: 2px;
+			}
+		.help_to{
+			margin-top:10px;
+			text-align:center;
+			border:1px #CA030F solid;
+			border-radius: 5px 15px 5px 5px;
+			position: relative;
+			width:90%;
+			transition: box-shadow 0.2s;
+		}
+			.help_to:hover{
+				box-shadow: 0 0 5px #E20613;
+			}
+		.help_to a{
+			display: block;
+			text-decoration: none;
+			color: #CA030F;
+			padding: 2px 0 5px 0;
+		}
+			.help_to a::after{
+				content:'';
+				height: 35px;
+				width: 35px;
+				position: absolute;
+				background-size: contain;
+				background-image: url(../images/heart.png);
+				right: -15px;
+				top:-2px;
+			}
+	.done .donations{
+		background-color: #F4CE77;
+		padding-left: 10px;
+		padding-bottom: 10px;
+		border-radius: 3px;
+		position: relative;
+		margin-bottom:50px;
+	}
+			.done .donations::after{
+				content: '';
+				position: absolute;
+				right:10px;
+				top:13px;
+				width:38px;
+				height:34px;
+				background-repeat: no-repeat;
+				background-image: url('../images/heart_transparent.svg');
+				background-size: cover;
+			}
+		.done .donations span{
+			color: #E20613;
+		}
+	.done .progres_bar{
+		display: none;
+	}
+	.done .help_to{
+		display: none;
+	}
+	.all_nd{
+		margin-top:20px;
+		font-family:Roboto;
+		font-size: 13px;
+		text-align: right;
+		text-transform:uppercase;
+	}
+		.all_nd .all_nd_item{
+			border-top:1px #EFEFEF solid;
+			position: relative;
+			margin-bottom:30px;
+		}
+			.all_nd .all_nd_item::after{
+				content: '';
+				background-color:#F4CE77;
+				position: absolute;
+				bottom: 0px;
+				right:13px;
+				height:1px;
+				width:100px;
+			}
+			.all_nd .all_nd_item a{
+				padding-top: 10px;
+				padding-bottom: 10px;
+				display: block;
+				text-decoration: none;
+				color: #4C4C4C;
+			}
+.news{
+	margin-top:50px;
+}
+	.news h1{
+		text-transform:uppercase;
+		font-family: Roboto;
+	}
+	.news_row{
+		justify-content: space-between;
+		margin-bottom:100px;
+	}
+	.news .news_item{
+		width:220px;
+		position: relative;
+		margin-top: 50px;
+	}
+	.news_topline{
+		align-items: center;
+		margin-bottom:18px;
+	}
+		.news_header{
+			font-family: Cormorant Garamond;
+			font-size: 17px;
+			text-align: center;
+			padding-right: 15px;
+			position: relative;
+		}
+		.news_date{
+			text-align: center;
+			font-family: Roboto;
+			font-size: 13px;
+			background-image:url('../images/Component 2.png');
+			background-position: center 6px;
+			background-repeat: no-repeat;
+			background-origin: content-box;
+		}
+			.news_date #numbers{
+				font-size: 40px;
+			}
+		.news_body{
+			font-family: Roboto;
+			font-size: 13px;
+			position: relative;
+			margin-bottom: 20px;
+		}
+			.news_body::before{
+				content:'';
+				position: absolute;
+				height:1px;
+				width:70px;
+				background-color: #F4CE77;
+				top:-20px;
+				left: 0;
+			}
+		.new_item .more_info{
+			margin-bottom:20px;
+		}
+.footer{
+	margin-top: 50px;
+	padding-bottom:20px;
+	background-color: #F6F6F6;
+}
+	.foot_row{
+		justify-content: space-between;
+	}
+		.footer	.f_logo .poly{
+			margin-top:50px;
+		}
+			.footer	.f_logo .poly a{
+			font-family: Roboto;
+			font-size: 13px;
+			text-decoration: none;
+			color: #4C4C4C;
+		}
+		.f_menu{
+			padding-top: 20px;
+			position: relative;
+		}
+		.f_menu::before{
+			content: '';
+			position: absolute;
+			height:1px;
+			width:100px;
+			background-color: #F4CE77;
+			top: 0;
+			left: 15;
+		}
+		.f_menu a{
+			display: block;
+			margin-bottom: 15px;
+			text-decoration:none;
+			color: #4C4C4C;
+			font-family: Roboto;
+		}
+
+
+	.f_contacts{
+		font-family: Roboto;
+		font-size: 35px;
+		text-align: right;
+	}
+		.f_contacts #phone{
+			position: relative;
+		}
+			.f_contacts #phone::before{
+				content: '';
+				position: absolute;
+				left: -37px;
+				top:5px;
+				width:25px;
+				height:25px;
+				background-repeat: no-repeat;
+				background-image: url('../images/telephone.svg');
+				background-size: cover;
+			}
+		.f_contacts #adress{
+			font-size: 15px;
+			position: relative;
+		}
+			.f_contacts #adress::before{
+				content: '';
+				position: absolute;
+				left: -24px;
+				top:-5px;
+				width:18px;
+				height:25px;
+				background-repeat: no-repeat;
+				background-image: url('../images/facebook-placeholder-for-locate-places-on-maps.svg');
+				background-size: cover;
+			}
+		.f_contacts .social{
+			margin-top:30px;
+			justify-content: flex-end;
+			position: relative;
+		}
+				.f_contacts .social::after{
+					content: '';
+					position: absolute;
+					height:1px;
+					width:200px;
+					top:0;
+					right: 0;
+					background-color: #F4CE77;
+				}
+			.f_contacts .social #instagram_logo{
+				margin-left: 20px;
+				width:25px;
+			}
+			.f_contacts .social #facebook_logo{
+				margin-left: 20px;
+				height:25px;
+			}
+			.f_contacts .social #vk_logo{
+				margin-left: 20px;
+				width:35px;
+			}
+@media screen and (max-device-width: 990px) {
+    .foot_row{
+    	display: block;
+    }
+ }
+@media screen and (max-device-width: 768px) {
+    #header_row{
+    	display: block;
+    }
+    .main_header .red_button{
+			width: 100%
+		}
+ }
+

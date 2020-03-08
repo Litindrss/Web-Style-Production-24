@@ -1,0 +1,166 @@
+h1{
+	text-transform: uppercase;
+}
+.top_content .left_side h1{
+	margin-top: 80px;
+	font-size: 35px;
+	font-family: 'Roboto';
+	font-weight: 100;
+	margin-bottom:50px;
+}
+
+.top_content .left_side h6{
+	position: relative;
+	margin-bottom: 30px;
+	font-family: Roboto;
+}
+	.top_content .left_side h6::after{
+		content: '';
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		height: 1px;
+		width: 100px;
+		background-color: #F4CE77;
+	}
+.top_content .left_side h4{
+	font-family: Roboto;
+	font-size: 25px;
+}
+	.top_content .left_side .adress h4{
+		font-family: Cormorant Garamond;
+		font-size: 25px;
+	}
+	.top_content .left_side .e_mail span{
+		padding-top: 5px;
+		display: block;
+		font-size: 15px;
+	}
+	.top_content .left_side span{
+		font-family: Roboto;
+		font-size: 13px;
+	}
+.top_content .left_side .cont_cell{
+	margin-bottom: 50px;
+}
+.for_v form input{
+	box-shadow: none;
+	border:none;
+	border-bottom: 1px #EDEDED solid;
+	font-weight: 100;
+}
+	.for_v form input:focus{
+		border-color: #F4CE77;
+		box-shadow: inherit;
+	}
+.for_v form textarea{
+	border:none;
+	resize: none;
+	border-bottom: 1px #EDEDED solid;
+	border-top: 1px #EDEDED solid;
+}
+	.for_v form textarea:focus{
+		border-color: #F4CE77;
+		box-shadow: inherit;
+	}
+.form-check{
+	text-align: center;
+}
+	.for_v  input[type="checkbox"]{
+		opacity: 0;
+	}
+	input[type="checkbox"] + label{
+		cursor: pointer;
+		font-size: 13px;
+		font-family: 'Roboto';
+	}
+	input[type="checkbox"]:checked + label::before{
+		background-image: url('../images/Suscess.svg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.for_v .form-check-label::before{
+		content:'';
+		position: absolute;
+		height:17px;
+		width:17px;
+		border:1px #F4CE77 solid;
+		border-radius: 2px;
+		top: 1px;
+		left: -25px;
+	}
+.for_v #v_button{
+	background-color: #E20613;
+	border-radius: 7px 15px 7px 7px;
+	padding: 3px 40px 5px 40px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: box-shadow 0.2s;
+	position: relative;
+	border: none;
+}
+	.for_v #v_button:hover{
+		box-shadow: 0px 0px 10px #E20613;
+	}
+	.for_v #v_button:focus{
+		box-shadow: 0px 0px 10px #E20613;
+	}
+	.for_v #v_button::after{
+		content:'';
+		height: 35px;
+		width: 35px;
+		position: absolute;
+		background-size: contain;
+		background-image: url(../images/heart.png);
+		right: -13px;
+		top:-2px;
+	}
+.right_side .rek_block{
+	padding:50px 10px 10px 10px;
+	margin-top: 80px;
+	border: 1px #979797 solid;
+	font-family: 'Roboto';
+	border-radius: 3px;
+}
+.right_side .rek_block h4{
+	font-family: Cormorant Garamond;
+	font-size: 30px;
+	font-weight: 400;
+}
+.right_side .rek_block span{
+	margin:0;
+	font-size:15px;
+}
+.right_side .rek_block h6{
+	margin:0;
+	font-size:11px;
+}
+.right_side .rek_block .downl_rek{
+	background-color: inherit;
+	border-radius: 7px 17px 10px 7px;
+	text-transform: uppercase;
+	text-align: center;
+	transition: box-shadow 0.2s;
+	position: relative;
+	border: 1px #E20613 solid;
+}
+.right_side .rek_block .downl_rek:hover{
+	box-shadow: 0px 0px 5px #E20613;
+}
+	.right_side .rek_block .downl_rek a{
+		display: block;
+		padding: 3px 40px 5px 40px;
+		text-decoration: none;
+		color: #E20613;
+	}
+	.right_side .rek_block .downl_rek a::after{
+		content:'';
+		height: 35px;
+		width: 35px;
+		position: absolute;
+		background-size: contain;
+		background-image: url(../images/heart.png);
+		right: -13px;
+		top:-2px;
+	}

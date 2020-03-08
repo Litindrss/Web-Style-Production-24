@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Pay</title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/contacts.css">
+	<link rel="stylesheet" href="css/pay1.css">
+</head>
+<body>
+<!--TOP NAVBAR-->
+	<div class="container nbar">
+		<div class="row justify-content-end">
+			<div class="navbar_item"><a href="">Главная</a></div>
+			<div class="navbar_item"><a href="">О фонде</a></div>
+			<div class="navbar_item"><a href="">Нужна помощь</a></div>
+			<div class="navbar_item"><a href="">Помогли</a></div>
+			<div class="navbar_item"><a href="">Друзья</a></div>
+			<div class="navbar_item"><a href="">Отчеты</a></div>
+			<div class="navbar_item"><a href="">Новости</a></div>
+			<div class="navbar_item"><a href="">Контакты</a></div>
+		</div>
+	</div>
+<!--HEADER-->
+	<div class="container main_header">
+		<div class="row" id="header_row">
+			<img src="images/fond_logo.png">
+			<div class="row justify-content-end help_btns">
+				<div class="sub_btn n_help"><a href="#">Нужна помощь</a></div>
+				<div class="sub_btn bec_vol"><a href="#">Cтать волонтером</a></div>
+				<div class="red_button"><a href="#">Cделать доброе дело</a></div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+<!--CONTENT-->
+<div class="container col-md-5 for_v">
+	<h6>Здравствуйте! Вы можете пожертвовать денежные средства в благотворительный фонд Силуана Афонского и они пойдут на добрые дела!</h6>
+	<form>
+		<div class="form-group">
+			<input type="text" class="form-control" id="exampleInputphone" placeholder="Введите сумму, руб." required>
+		</div>
+		<div class="payment row">
+			<input type="radio" name="p_var" class="form-check-input" id="payment1">
+			<label class="form-check-label position-relative payment_item text-center" for="payment1">
+				<img src="images/Group.svg" alt=""><br>
+				<span>Банковская платежная <br> квитанция</span>
+
+			</label>
+
+			<input type="radio" name="p_var" class="form-check-input" id="payment2">
+			<label class="form-check-label position-relative payment_item text-center" for="payment2">
+				<img src="images/Group.svg" alt=""><br>
+				<span>Банковская платежная <br> квитанция</span>
+
+			</label>
+
+			<input type="radio" name="p_var" class="form-check-input" id="payment3">
+			<label class="form-check-label position-relative payment_item text-center" for="payment3">
+				<img src="images/Group.svg" alt=""><br>
+				<span>Банковская платежная <br> квитанция</span>
+
+			</label>
+		</div>
+		<div class="form-group">
+			<input type="email" class="form-control" id="exampleInputEmail" placeholder="Ваш e-mail" required>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" id="exampleInputname" placeholder="Имя и Фамилия" required>
+		</div>
+
+
+		<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="offCheck1">
+			<label class="form-check-label position-relative" for="offCheck1">Я принимаю 
+				<a href="#">Договор оферты</a>
+			</label>
+		</div>
+		<div class="form-group form-check">
+			<input type="checkbox" class="form-check-input" id="persCheck1">
+			<label class="form-check-label position-relative" for="persCheck1">Я принимаю <a href="#">Соглашение об использовании персональных данных</a>
+			</label>
+		</div>
+		<div class="row justify-content-center">
+			<button type="submit" id="v_button" class="btn btn-primary ">Пожертвовать</button>
+		</div>
+	</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER-->
+	<div class="footer pt-4">
+		<div class="container">
+				<div class="row foot_row">
+					<div class="f_logo col">
+						<img src="images/fond_logo.png">
+						<div class="poly">
+							<br><a href="#">политика конфеденциальности</a><br>
+							<a href="#">согласие на обработку персональных данных</a>
+						</div>
+					</div>
+					<div class="f_menu col">
+						<div class="row">
+							<a class="col-md-4" href="#">Главная</a>
+							<a class="col-md-4" href="#">Помогли</a>
+							<a class="col-md-4" href="#">Новости</a>
+							<a class="col-md-4" href="#">О фонде</a>
+							<a class="col-md-4" href="#">Друзья</a>
+							<a class="col-md-4" href="#">Контакты</a>
+							<a class="col-md-4" href="#">Нужна помощь</a>
+							<a class="col-md-4" href="#">Отчеты</a>
+						</div>
+					</div>
+					<div class="f_contacts col">
+						<span id="phone">+7 650 106 57 31</span><br>
+						<span id="adress">г. Воронеж, Московский пр-т, 67 оф. 307</span>
+							<div class="row social">
+								<a href="#"><img id="instagram_logo" src="images/instagram.svg"></a>
+								<a href="#"><img id="facebook_logo" src="images/facebook-logo.svg"></a>
+								<a href="#"><img id="vk_logo" src="images/vk-social-network-logo.svg"></a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

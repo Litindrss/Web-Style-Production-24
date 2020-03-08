@@ -1,0 +1,80 @@
+.for_v{
+	margin-bottom:100px;
+}
+.for_v h6{
+	margin-top:70px;
+	font-family: 'Roboto';
+	font-size: 13px;
+	margin-bottom:25px;
+	font-weight: 100;
+	color: #4C4C4C;
+}
+.for_v .form-check{
+	text-align: left;
+}
+.for_v #v_button{
+	margin-top:20px;
+	padding: 3px 80px 5px 80px;
+}
+
+.form-check{
+	text-align: center;
+}
+.payment{
+	margin:0;
+	justify-content: space-between;
+}
+
+	.for_v .payment input[type="radio"]{
+		opacity: 0;
+	}
+	.for_v .payment input[type="radio"] + label{
+			cursor: pointer;
+			font-size: 13px;
+			font-family: 'Roboto';
+		}
+	.for_v .payment input[type="radio"]:checked + label::before{
+			display: none;
+		}
+	.for_v .payment .form-check-label::before{
+			display: none;
+		}
+	.payment_item{
+		border: 1px #979797 solid;
+		font-family: 'Roboto';
+		border-radius: 3px;
+		padding: 10px 20px 10px 20px;
+		margin-bottom:35px;
+		font-size: 13px;
+	}
+	.for_v .payment input[type="radio"]:checked + .payment_item{
+		border-color: #E20613;
+	}
+		.payment_item img{
+			width: 70px;
+		}
+		.payment_item span{
+			margin-top:30px;
+			display: block;
+			position: relative;
+			font-weight: 100;
+			color: #4C4C4C;
+		}
+		.payment_item span::before{
+			content: '';
+			position: absolute;
+			width: 50px;
+			height: 1px;
+			background-color: #979797;
+			top: -15px;
+			left: 44px;
+		}
+	label a{
+		color: #4C4C4C;
+		text-decoration: none;
+		border-bottom: 1px #4C4C4C solid;
+	}
+		label a:hover{
+			color: #4C4C4C;
+			text-decoration: none;
+		}

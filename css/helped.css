@@ -1,0 +1,86 @@
+body{
+	overflow-x: hidden;
+}
+.top_content h1{
+	text-transform: uppercase;
+	font-family: 'Roboto';
+	font-weight: 100;
+	margin-bottom: 50px;
+	position: relative;
+}
+.top_content h1::before{
+	content:'';
+	position: absolute;
+	background-color: #F4CE77;
+	height: 1px;
+	width: 70px;
+	bottom: -20px;
+	left: 0;
+}
+.top_content .done{
+	border: 1px #979797 solid;
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-right:0px;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom:50px;
+}
+	.top_content .done .hr{
+		margin-top:0px;
+		margin-bottom:25px;
+	}
+	.top_content .done h4{
+		font-size: 30px;
+	}
+	.top_content .done .donations{
+		padding-bottom: 0px;
+		padding-left:0px;
+		background-color:inherit;
+		color:black;
+		margin-top: 50px;
+		margin-bottom:0px;
+	}
+		.top_content .done .donations::after{
+			display: none;
+		}
+		.top_content .done .donations .count_alr span{
+			color:#F4CE77;
+		}
+	.top_content .done .progres_bar{
+
+		width: 80%;
+		display: block;
+	}
+		.top_content .done .progres_bar::before{
+			border-radius: 2px 2px 2px 2px;
+			width: 98%;
+		}
+		.top_content .done .progres_bar::after{
+			content:'';
+			background-color: inherit;
+			height: 35px;
+			width: 35px;
+			position: absolute;
+			background-size: contain;
+			background-image: url(../images/heart.png);
+			right: -42px;
+			top:-12px;
+		}
+		.top_content .done img{
+			margin:auto 0;
+			height: 100%;
+		}
+.top_content .need_help_item{
+	border: 1px #979797 solid;
+}
+	.top_content .need_help_item h4{
+		font-size: 30px;
+		margin-top:30px;
+	}
+.top_content .all_nd_item{
+	border:none;
+}
+	.top_content .all_nd_item::after{
+		right: 0;
+	}
